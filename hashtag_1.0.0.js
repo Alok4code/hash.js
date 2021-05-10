@@ -63,6 +63,10 @@ const self = {
     }
 
 
+
+
+
+
   }
 return self;
 }
@@ -88,7 +92,7 @@ function cookie(key, val, expires, path){
      if(expires == null){
            var expires = "session";
           }
-           document.cookie = `${key}=${val}; expires=${expires}; path=${path}`;
+          document.cookie = `${key}=${val}; expires=${expires}; path=${path}`;
 }
 function getCookie(cname){
            var name = cname + "=";
@@ -104,4 +108,9 @@ function getCookie(cname){
           }
         }
           return "";
+}
+function addElm(elm, id, val) {
+   var element = document.createElement(elm);
+   element.id = val;
+   document.body.appendChild(element);
 }
