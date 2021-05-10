@@ -6,8 +6,11 @@ const self = {
     on: (event, callback) => {
       self.element.addEventListener(event, callback)
     },
-    hide: ()=> {
-      self.element.style.display = 'none'
+    hide: (animeName)=> {
+      self.element.style.display = 'none';
+      if(animeName == null){}else{
+      self.element.setAttribute("class", `animate__animated animate__${animeName}`)
+      }
     },
     attr: (name, value) => {
       if(value == null)
@@ -15,8 +18,11 @@ const self = {
       else
         self.element.setAttribute(name, value)
     },
-    show: () => {
-        self.element.style.display = "" 
+    show: (animeName) => {
+        self.element.style.display = "";
+        if(animeName == null){}else{
+        self.element.setAttribute("class", `animate__animated animate__${animeName}`)
+       }
     },
     append: (text) => {
         self.element.innerHTML = self.element.innerHTML + text
@@ -32,13 +38,14 @@ const self = {
          var link  = document.createElement('link');
          link.rel  = 'stylesheet';
          link.type = 'text/css';
-         link.href = '';
+         link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css';
          link.media = 'all';
          head.appendChild(link);
     }
-    animate: (name) => {
+    animate: (name, del, dur) => {
          self.element.setAttribute("class", `animate__animated animate__${name}`)
-    }
+    },
+    
 
 
 
