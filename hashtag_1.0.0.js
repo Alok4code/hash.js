@@ -31,7 +31,7 @@ const self = {
         self.element.innerHTML = text + self.element.innerHTML
     },
     css: (prop, val) => {
-        self.element.style[prop] = val
+        self.elemenr.style.setProperty(prop, val);
     },
     enableAnime: () => {
          var head  = document.getElementsByTagName('head')[0];
@@ -43,7 +43,10 @@ const self = {
          head.appendChild(link);
     }
     animate: (name, del, dur) => {
-         self.element.setAttribute("class", `animate__animated animate__${name}`)
+         self.element.setAttribute("class", `animate__animated animate__${name}`);
+         self.element.style.setProperty("--animate-duration", dur);
+         self.element.style.setProperty("--animate-delay", del);
+     
     },
     
 
