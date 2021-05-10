@@ -41,12 +41,12 @@ const self = {
          link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css';
          link.media = 'all';
          head.appendChild(link);
-    }
+    },
     animate: (name, del, dur) => {
          self.element.setAttribute("class", `animate__animated animate__${name}`);
          self.element.style.setProperty("--animate-duration", dur);
          self.element.style.setProperty("--animate-delay", del);
-     
+
     },
     
 
