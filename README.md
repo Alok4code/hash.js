@@ -1,4 +1,4 @@
 # hashtag
 A jQuery like library .better I mean
-/n
+\n
 Still under work
