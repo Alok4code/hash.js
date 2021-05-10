@@ -48,7 +48,21 @@ const self = {
          self.element.style.setProperty("--animate-delay", del);
 
     },
-    
+    addScript: (url) => {
+         var head  = document.getElementsByTagName('head')[0];
+         var script  = document.createElement('script');
+         script.type = "text/javascript";
+         script.href = url;
+         head.appendChild(script);
+    },
+    addStyle: (url) => {
+         var head  = document.getElementsByTagName('head')[0];
+         var style  = document.createElement('link');
+         style.rel = "stylesheet";
+         style.type = "text/css";
+         style.href = url;
+         head.appendChild(style);
+    }
 
 
 
