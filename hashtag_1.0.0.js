@@ -48,21 +48,6 @@ const self = {
          self.element.style.setProperty("--animate-delay", del);
 
     },
-    addScript: (url) => {
-         var head  = document.getElementsByTagName('head')[0];
-         var script  = document.createElement('script');
-         script.type = "text/javascript";
-         script.href = url;
-         head.appendChild(script);
-    },
-    addStyle: (url) => {
-         var head  = document.getElementsByTagName('head')[0];
-         var style  = document.createElement('link');
-         style.rel = "stylesheet";
-         style.type = "text/css";
-         style.href = url;
-         head.appendChild(style);
-    },
     ajax: (url, method) => {
            if(method == null){console.log("Ajax request cannot be performed while method is null.")}else{
            var xhttp = new XMLHttpRequest();
@@ -75,22 +60,48 @@ const self = {
            xhttp.open(method, url, true);
            xhttp.send();
          }
-    },
-    cookie: (key, val, expires, path) => {
-           if(expires == null){
-           var expires = "session";
-          }
-           document.cookie = `${key}=${val}; expires=${expires}; path=${path}`;
-    },
-    getCookie: (key) => {
-           
     }
-
-
-
-
 
 
   }
 return self;
+}
+
+//Other usefull functions
+
+function addScript(url){
+         var head  = document.getElementsByTagName('head')[0];
+         var script  = document.createElement('script');
+         script.type = "text/javascript";
+         script.href = url;
+         head.appendChild(script);
+}
+function addStyle(url){
+         var head  = document.getElementsByTagName('head')[0];
+         var style  = document.createElement('link');
+         style.rel = "stylesheet";
+         style.type = "text/css";
+         style.href = url;
+         head.appendChild(style);
+}
+function cookie(key, val, expires, path){
+     if(expires == null){
+           var expires = "session";
+          }
+           document.cookie = `${key}=${val}; expires=${expires}; path=${path}`;
+}
+function getCookie(cname){
+           var name = cname + "=";
+           var decodedCookie = decodeURIComponent(document.cookie);
+           var ca = decodedCookie.split(';');
+           for(var i = 0; i <ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+        }
+          return "";
 }
