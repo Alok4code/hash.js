@@ -24,8 +24,21 @@ const self = {
     prepend: (text) => {
         self.element.innerHTML = text + self.element.innerHTML
     },
-    
-
+    css: (prop, val) => {
+        self.element.style[prop] = val
+    },
+    enableAnime: () => {
+         var head  = document.getElementsByTagName('head')[0];
+         var link  = document.createElement('link');
+         link.rel  = 'stylesheet';
+         link.type = 'text/css';
+         link.href = '';
+         link.media = 'all';
+         head.appendChild(link);
+    }
+    animate: (name) => {
+         self.element.setAttribute("class", `animate__animated animate__${name}`)
+    }
 
 
 
