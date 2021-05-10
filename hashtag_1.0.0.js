@@ -76,7 +76,15 @@ const self = {
            xhttp.send();
          }
     },
-    
+    cookie: (key, val, expires, path) => {
+           if(expires == null){
+           var expires = "session";
+          }
+           document.cookie = `${key}=${val}; expires=${expires}; path=${path}`;
+    },
+    getCookie: (key) => {
+           
+    }
 
 
 
