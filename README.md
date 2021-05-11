@@ -1,13 +1,15 @@
 <img src="./logo.png" height="auto" width="auto" style="border-radius: 15px;"><br>
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
-CDN
+Link to the file
 <br>
-``` javascript
-<script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script>
-```
+
+https://netopa.github.io/hash.js/hashtag_1.0.1.js
+
+
 <br>
-size: 1/6<sup>th</sup> of jQuery !(when completed)
+size: 1/6<sup>th</sup> of jQuery!<br>
+(when completed)
 <br>
 how to use
 <br>
