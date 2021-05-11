@@ -115,7 +115,7 @@ function hash(sel) {
            style.href = url;
            head.appendChild(style);
      },
-     setCookie: function(key, value, expires, path){
+     setCookie: function(key, val, expires, path){
            if (expires == null) {
                 expires = 'session';
            }
