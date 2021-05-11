@@ -175,3 +175,9 @@ slideOutUp
 
 ```
 
+Adding an event listener:<br>
+``` javascript
+#('.body').on('click', function(){
+   alert('clicked');
+})
+```
