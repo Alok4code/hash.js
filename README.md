@@ -23,6 +23,8 @@ Then enable it for an element
 <br>
 <br>
 list of animation inclues : <br>
+We use animate.css engine for animating elements so the list could be a whole lot familiar...
+<br>
 
 ```
 #Attention seekers:
@@ -39,6 +41,7 @@ tada
 wobble
 jello
 heartBeat
+
 #Back entrances:
 
 backInDown
@@ -51,11 +54,11 @@ backOutLeft
 backOutRight
 backOutUp
 
-Back exits
+# Back exits:
+
 backOutDown
 backOutLeft
 backOutRight
-
 backOutUp
 Bouncing entrances
 bounceIn
@@ -63,6 +66,7 @@ bounceInDown
 bounceInLeft
 bounceInRight
 bounceInUp
+
 # Bouncing exits:
 
 bounceOut
@@ -70,6 +74,7 @@ bounceOutDown
 bounceOutLeft
 bounceOutRight
 bounceOutUp
+
 # Fading entrances:
 
 fadeIn
@@ -85,6 +90,7 @@ fadeInTopLeft
 fadeInTopRight
 fadeInBottomLeft
 fadeInBottomRight
+
 #Fading exit:
 
 fadeOut
@@ -100,6 +106,7 @@ fadeOutTopLeft
 fadeOutTopRight
 fadeOutBottomRight
 fadeOutBottomLeft
+
 # Flippers:
 
 flip
@@ -107,12 +114,14 @@ flipInX
 flipInY
 flipOutX
 flipOutY
+
 # Lightspeed:
 
 lightSpeedInRight
 lightSpeedInLeft
 lightSpeedOutRight
 lightSpeedOutLeft
+
 # Rotating entrances:
 
 rotateIn
@@ -120,6 +129,7 @@ rotateInDownLeft
 rotateInDownRight
 rotateInUpLeft
 rotateInUpRight
+
 # Rotating exits:
 
 rotateOut
@@ -133,6 +143,7 @@ hinge
 jackInTheBox
 rollIn
 rollOut
+
 # Zooming entrances:
 
 zoomIn
@@ -140,6 +151,7 @@ zoomInDown
 zoomInLeft
 zoomInRight
 zoomInUp
+
 #Zooming exits:
 
 zoomOut
@@ -147,12 +159,14 @@ zoomOutDown
 zoomOutLeft
 zoomOutRight
 zoomOutUp
+
 # Sliding entrances:
 
 slideInDown
 slideInLeft
 slideInRight
 slideInUp
+
 # Sliding exits:
 
 slideOutDown
