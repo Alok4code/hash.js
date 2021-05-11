@@ -37,7 +37,7 @@ function hash(sel) {
       self.element.innerHTML = text + self.element.innerHTML;
     },
     css: function(prop, val) {
-      self.elemenr.style.setProperty(prop, val);
+      self.element.setProperty(prop, val);
     },
     enableAnime: function() {
       const head = document.getElementsByTagName('head')[0];
