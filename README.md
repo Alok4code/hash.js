@@ -21,11 +21,9 @@ Then enable it for an element
 #('.body').animate('jackInTheBox');
 ```
 <br>
+<br>We use animate.css engine for animating elements so the list could be a whole lot familiar...
 <br>
 list of animation inclues : <br>
-We use animate.css engine for animating elements so the list could be a whole lot familiar...
-<br>
-
 ```
 #Attention seekers:
 
