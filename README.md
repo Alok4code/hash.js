@@ -1,6 +1,6 @@
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
-``` javascript
+``` html
 *<script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script>*
 ```
 <br>
