@@ -74,69 +74,68 @@ function hash(sel) {
     toogle: function() {
           self.element.style.display == 'block' ? self.element.style.display = 'none' : self.element.style.display = 'block';
     },
+    storage: function(action, key, value){
+            if (action == 'clear') {
+                    localStorage.clear();
+            } else if (action == 'set') {
+                    localStorage.setItem(key, value);
+            } else if (action == 'get') {
+                    value = localStorage.getItem(key);
+                    return value;
+            } else if (action == 'remove') {
+                    localStorage.remove(key);
+            } else {
+                    console.log('no action defined');
+            }
+     },
+     addScript: function(url){
+           const head = document.getElementsByTagName('head')[0];
+           const script = document.createElement('script');
+           script.type = 'text/javascript';
+           script.href = url;
+           head.appendChild(script);
+     },
+     addStyle: function(url){
+           const head = document.getElementsByTagName('head')[0];
+           const style = document.createElement('link');
+           style.rel = 'stylesheet';
+           style.type = 'text/css';
+           style.href = url;
+           head.appendChild(style);
+     },
+     setCookie: function(key, value, expires, path){
+           if (expires == null) {
+                expires = 'session';
+           }
+           document.cookie = `${key}=${val}; expires=${expires}; path=${path}`;
+     },
+     getCookie: function(cname){
+       const name = cname + '=';
+       const decodedCookie = decodeURIComponent(document.cookie);
+       const ca = decodedCookie.split(';');
+       for (let i = 0; i <ca.length; i++) {
+         let c = ca[i];
+         while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return '';
+     },
+     addElm: function(elm, id){
+             element1 = document.createElement(elm);
+             element.id = id;
+             self.element.appendChild(element1);
+     },
+     
+
+
+
+
 
 
   };
   return self;
 }
-
-// Other usefull functions
-
-function addScript(url) {
-  const head = document.getElementsByTagName('head')[0];
-  const script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.href = url;
-  head.appendChild(script);
-}
-function addStyle(url) {
-  const head = document.getElementsByTagName('head')[0];
-  const style = document.createElement('link');
-  style.rel = 'stylesheet';
-  style.type = 'text/css';
-  style.href = url;
-  head.appendChild(style);
-}
-function cookie(key, val, expires, path) {
-  if (expires == null) {
-    expires = 'session';
-  }
-  document.cookie = `${key}=${val}; expires=${expires}; path=${path}`;
-}
-function getCookie(cname) {
-  const name = cname + '=';
-  const decodedCookie = decodeURIComponent(document.cookie);
-  const ca = decodedCookie.split(';');
-  for (let i = 0; i <ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return '';
-}
-function addElm(element, elm, id,) {
-  element = document.createElement(elm);
-  element.id = id;
-  document.body.appendChild(element);
-}
-function storage(action, key, value) {
-  if (action == 'clear') {
-    localStorage.clear();
-  } else if (action == 'set') {
-    localStorage.setItem(key, value);
-  } else if (action == 'get') {
-    value = localStorage.getItem(key);
-    return value;
-  } else if (action == 'remove') {
-    localStorage.remove(key);
-  } else {
-    console.log('no action defined');
-  }
-}
-
-
-hash(); addScript(); addStyle(); cookie(); getCookie(); addElm(); storage();
