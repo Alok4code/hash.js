@@ -1,4 +1,4 @@
-# hashtag
+# [hashtag](https://netopa.github.io/hashtag)
 A jQuery like library .better I mean
-\n
+<br>
 Still under work
