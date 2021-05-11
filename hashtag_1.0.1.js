@@ -49,7 +49,7 @@ function hash(sel) {
       head.appendChild(link);
     },
     animate: function(name, del, dur) {
-      self.element.setAttribute('class', `animate__animated animate__${name}`);
+      self.element.classList.add('animate__animated', 'animate__'+name);
       self.element.style.setProperty('--animate-duration', dur);
       self.element.style.setProperty('--animate-delay', del);
     },
