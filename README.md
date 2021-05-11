@@ -24,6 +24,7 @@ Then enable it for an element
 <br>We use animate.css engine for animating elements so the list could be a whole lot familiar...
 <br>
 list of animation inclues : <br>
+
 ```
 #Attention seekers:
 
