@@ -1,10 +1,10 @@
-hash [hashtag](https://netopa.github.io/hashtag)
+# [hashtag](https://netopa.github.io/hashtag)
 <br>
 <h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
 <br>
-hash how to use
+# how to use
 <br>
-hash Just use it like jQuery :
+# Just use it like jQuery :
 
 ``` javascript
 hash('hashid').hide(animationName);
@@ -28,7 +28,7 @@ hash('.body').animate('jackInTheBox', "1s", "1s");//animation name, duration ,de
 list of animation inclues : <br>
 
 ```
-hashAttention seekers:
+Attention seekers:
 
 bounce
 flash
@@ -43,7 +43,7 @@ wobble
 jello
 heartBeat
 
-hashBack entrances:
+Back entrances:
 
 backInDown
 backInLeft
@@ -55,7 +55,7 @@ backOutLeft
 backOutRight
 backOutUp
 
-hash Back exits:
+Back exits:
 
 backOutDown
 backOutLeft
@@ -68,7 +68,7 @@ bounceInLeft
 bounceInRight
 bounceInUp
 
-hash Bouncing exits:
+Bouncing exits:
 
 bounceOut
 bounceOutDown
@@ -76,7 +76,7 @@ bounceOutLeft
 bounceOutRight
 bounceOutUp
 
-hash Fading entrances:
+Fading entrances:
 
 fadeIn
 fadeInDown
@@ -92,7 +92,7 @@ fadeInTopRight
 fadeInBottomLeft
 fadeInBottomRight
 
-hashFading exit:
+Fading exit:
 
 fadeOut
 fadeOutDown
@@ -108,7 +108,7 @@ fadeOutTopRight
 fadeOutBottomRight
 fadeOutBottomLeft
 
-hash Flippers:
+Flippers:
 
 flip
 flipInX
@@ -116,14 +116,14 @@ flipInY
 flipOutX
 flipOutY
 
-hash Lightspeed:
+Lightspeed:
 
 lightSpeedInRight
 lightSpeedInLeft
 lightSpeedOutRight
 lightSpeedOutLeft
 
-hash Rotating entrances:
+Rotating entrances:
 
 rotateIn
 rotateInDownLeft
@@ -131,21 +131,22 @@ rotateInDownRight
 rotateInUpLeft
 rotateInUpRight
 
-hash Rotating exits:
+Rotating exits:
 
 rotateOut
 rotateOutDownLeft
 rotateOutDownRight
 rotateOutUpLeft
 rotateOutUpRight
-hash Specials:
+
+Specials:
 
 hinge
 jackInTheBox
 rollIn
 rollOut
 
-hash Zooming entrances:
+Zooming entrances:
 
 zoomIn
 zoomInDown
@@ -153,7 +154,7 @@ zoomInLeft
 zoomInRight
 zoomInUp
 
-hashZooming exits:
+Zooming exits:
 
 zoomOut
 zoomOutDown
@@ -161,14 +162,14 @@ zoomOutLeft
 zoomOutRight
 zoomOutUp
 
-hash Sliding entrances:
+Sliding entrances:
 
 slideInDown
 slideInLeft
 slideInRight
 slideInUp
 
-hash Sliding exits:
+Sliding exits:
 
 slideOutDown
 slideOutLeft
