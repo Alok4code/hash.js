@@ -21,7 +21,7 @@ const self = {
         self.element.setAttribute(name, value)
     },
     show: (animeName) => {
-        self.element.style.display = "";
+        self.element.style.display = "block";
         if(animeName == null){}else{
         self.element.setAttribute("class", `animate__animated animate__${animeName}`)
        }
@@ -62,6 +62,13 @@ const self = {
            xhttp.open(method, url, true);
            xhttp.send();
          }
+    },
+    remove: () => {
+           self.element.remove();
+    },
+    toogle: () => {
+          self.element.style.display == "block" ? self.element.style.display = "none";
+          self.element.style.display = "none" ? self.element.style.display = "block";
     }
 
 
