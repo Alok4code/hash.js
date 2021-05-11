@@ -1,26 +1,26 @@
-# [hashtag](https://netopa.github.io/hashtag)
+hash [hashtag](https://netopa.github.io/hashtag)
 <br>
 <h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
 <br>
-# how to use
+hash how to use
 <br>
-# Just use it like jQuery :
+hash Just use it like jQuery :
 
 ``` javascript
-#('#id').hide(animationName);
-#('.class').show(animationName);
-#('by tag').animate(animation name, duration, delay);
+hash('hashid').hide(animationName);
+hash('.class').show(animationName);
+hash('by tag').animate(animation name, duration, delay);
 ```
 Note: you must first enable animation by
 <br>
 
 ``` javascript
-#().enableAnime();
+hash().enableAnime();
 ```
 Which enables it for all element on the page<br>
 Then enable it for an element
 ``` javascript
-#('.body').animate('jackInTheBox', "1s", "1s");//animation name, duration ,delay
+hash('.body').animate('jackInTheBox', "1s", "1s");//animation name, duration ,delay
 ```
 <br>
 <br>We use animate.css engine for animating elements so the list could be a whole lot familiar...
@@ -28,7 +28,7 @@ Then enable it for an element
 list of animation inclues : <br>
 
 ```
-#Attention seekers:
+hashAttention seekers:
 
 bounce
 flash
@@ -43,7 +43,7 @@ wobble
 jello
 heartBeat
 
-#Back entrances:
+hashBack entrances:
 
 backInDown
 backInLeft
@@ -55,7 +55,7 @@ backOutLeft
 backOutRight
 backOutUp
 
-# Back exits:
+hash Back exits:
 
 backOutDown
 backOutLeft
@@ -68,7 +68,7 @@ bounceInLeft
 bounceInRight
 bounceInUp
 
-# Bouncing exits:
+hash Bouncing exits:
 
 bounceOut
 bounceOutDown
@@ -76,7 +76,7 @@ bounceOutLeft
 bounceOutRight
 bounceOutUp
 
-# Fading entrances:
+hash Fading entrances:
 
 fadeIn
 fadeInDown
@@ -92,7 +92,7 @@ fadeInTopRight
 fadeInBottomLeft
 fadeInBottomRight
 
-#Fading exit:
+hashFading exit:
 
 fadeOut
 fadeOutDown
@@ -108,7 +108,7 @@ fadeOutTopRight
 fadeOutBottomRight
 fadeOutBottomLeft
 
-# Flippers:
+hash Flippers:
 
 flip
 flipInX
@@ -116,14 +116,14 @@ flipInY
 flipOutX
 flipOutY
 
-# Lightspeed:
+hash Lightspeed:
 
 lightSpeedInRight
 lightSpeedInLeft
 lightSpeedOutRight
 lightSpeedOutLeft
 
-# Rotating entrances:
+hash Rotating entrances:
 
 rotateIn
 rotateInDownLeft
@@ -131,21 +131,21 @@ rotateInDownRight
 rotateInUpLeft
 rotateInUpRight
 
-# Rotating exits:
+hash Rotating exits:
 
 rotateOut
 rotateOutDownLeft
 rotateOutDownRight
 rotateOutUpLeft
 rotateOutUpRight
-# Specials:
+hash Specials:
 
 hinge
 jackInTheBox
 rollIn
 rollOut
 
-# Zooming entrances:
+hash Zooming entrances:
 
 zoomIn
 zoomInDown
@@ -153,7 +153,7 @@ zoomInLeft
 zoomInRight
 zoomInUp
 
-#Zooming exits:
+hashZooming exits:
 
 zoomOut
 zoomOutDown
@@ -161,14 +161,14 @@ zoomOutLeft
 zoomOutRight
 zoomOutUp
 
-# Sliding entrances:
+hash Sliding entrances:
 
 slideInDown
 slideInLeft
 slideInRight
 slideInUp
 
-# Sliding exits:
+hash Sliding exits:
 
 slideOutDown
 slideOutLeft
@@ -179,32 +179,32 @@ slideOutUp
 
 Adding an event listener:<br>
 ``` javascript
-#('.body').on('click', function(){
+hash('.body').on('click', function(){
    alert('clicked');
 })
 ```
 Append text:<br>
 ``` javascript
-#("body").append("someText")
+hash("body").append("someText")
 ```
 Prepend text: <br>
 ``` javascript
-#("body").prepend("someText")
+hash("body").prepend("someText")
 ```
 Set or get attributes:<br>
 ``` javascript
-#("body").attr("id") // returns body
-#("body").attr("id", "body") // sets I'd to body
+hash("body").attr("id") // returns body
+hash("body").attr("id", "body") // sets I'd to body
 ```
 Change the style of an element:<br>
 ``` javascript
-#("body").css(property, value)
+hash("body").css(property, value)
 Example:
-#("body").css("background", "black") //changes the css to background: black;
+hash("body").css("background", "black") //changes the css to background: black;
 ```
 Ajax: change the content of an element with remote file content:<br>
 ``` javascript
-#("body").ajax("https://url-to-file.com/TXT.txt", "get") //the second one is the method
+hash("body").ajax("https://url-to-file.com/TXT.txt", "get") //the second one is the method
 ```
 
 Set a cookie 🍪:<br>
@@ -217,7 +217,7 @@ getCookie("username"); //returns "hashtag"
 ```
 Add an element:<br>
 ``` javascript
-addElm("#('place to append')", "element name", "id of elm")
+addElm("hash('place to append')", "element name", "id of elm")
 // You can use the set attribute function to add attributes or to change text into the element
 ```
 Configure local storage:<br>
@@ -232,5 +232,5 @@ storage(action, key, value)
 ```
 Toogle hide and show:<br>
 ``` javascript
-$(".element").toogle();
+hash(".element").toogle();
 ```
