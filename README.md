@@ -1,7 +1,7 @@
-<div style="text-align: center;"><img src="/logo.png" height="150px" width="auto"></div><br>
+<img src="/logo.png" height="150px" width="auto"><br>
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
-<h1>CDN</h1>
+<h3>CDN</h3>
 <br>
 <code><script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script></code>
 <br>
