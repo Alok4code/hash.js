@@ -5,9 +5,9 @@
 # Just use it like jQuery :
 
 ``` javascript
-#('#id').hide();
-#('.class').show();
-#('by tag').animate();
+#('#id').hide(animationName);
+#('.class').show(animationName);
+#('by tag').animate(animation name, duration, delay);
 ```
 Note: you must first enable animation by
 <br>
@@ -18,7 +18,7 @@ Note: you must first enable animation by
 Which enables it for all element on the page<br>
 Then enable it for an element
 ``` javascript
-#('.body').animate('jackInTheBox');
+#('.body').animate('jackInTheBox', "1s", "1s");//animation name, duration ,delay
 ```
 <br>
 <br>We use animate.css engine for animating elements so the list could be a whole lot familiar...
@@ -181,3 +181,12 @@ Adding an event listener:<br>
    alert('clicked');
 })
 ```
+Append text:<br>
+``` javascript
+#("body").append("someText")
+```
+Prepend text: <br>
+``` javascript
+#("body").prepend("someText")
+```
+
