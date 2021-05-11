@@ -1,4 +1,4 @@
-# [hash.js](https://netopa.github.io/hashtag)
+# [hash.js](https://netopa.github.io/hash.js)
 <br>
 <h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
 <br>
