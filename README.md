@@ -3,15 +3,15 @@
 <br>
 <h3>CDN</h3>
 <br>
-``` html
-<script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script></code>
-```
+<code>
+<script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script>
+</code>
 <br>
 <h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
 <br>
-# how to use
+<he>how to use</h2>
 <br>
-# Just use it like jQuery :
+<h2Just use it like jQuery :</h2>
 
 ``` javascript
 hash('#id').hide(animationName);
