@@ -1,5 +1,6 @@
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
+# CDN
 <code><script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script></code>
 <br>
 <h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
@@ -9,7 +10,7 @@
 # Just use it like jQuery :
 
 ``` javascript
-hash('hashid').hide(animationName);
+hash('#id').hide(animationName);
 hash('.class').show(animationName);
 hash('by tag').animate(animation name, duration, delay);
 ```
