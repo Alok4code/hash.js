@@ -1,4 +1,4 @@
-<img src="/logo.png" height="150px" width="auto" style="border-radius: 50%;"><br>
+<img src="./logo.png" height="auto" width="auto" style="border-radius: 50%;"><br>
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
 <h3>CDN</h3>
