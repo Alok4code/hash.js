@@ -1,6 +1,6 @@
 # [hashtag](https://netopa.github.io/hashtag)
 <br>
-<h2>size: 1/6<sup>th</sup> of jQuery !</h2>
+<h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
 <br>
 # how to use
 <br>
