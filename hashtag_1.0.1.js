@@ -21,9 +21,9 @@ function hash(sel) {
     },
     hide: function(animeName) {
       if (animeName == null) {
-        console.log('no animation specified');
+        animeName = "bounceOut";
       } else {
-        self.element.setAttribute('class', `animate__animated animate__${animeName} animate__duration-1s`);
+        self.element.setAttribute('class', `animate__animated animate__${animeName} animate__duration-2s`);
         self.element.style.display = 'none';
       }
     },
@@ -35,12 +35,11 @@ function hash(sel) {
       }
     },
     show: function(animeName) {
-      self.element.style.display = 'block';
       if (animeName == null) {
-        console.log('none specified');
-      } else {
-        self.element.setAttribute('class', `animate__animated animate__${animeName}`);
+        animeName = "bounceIn";
       }
+        self.element.setAttribute('class', `animate__animated animate__${animeName}`);
+        self.element.style.display = 'block';
     },
     append: function(text) {
       self.element.innerHTML = self.element.innerHTML + text;
