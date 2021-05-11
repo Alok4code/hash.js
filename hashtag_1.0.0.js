@@ -67,8 +67,7 @@ const self = {
            self.element.remove();
     },
     toogle: () => {
-          self.element.style.display == "block" ? self.element.style.display = "none";
-          self.element.style.display = "none" ? self.element.style.display = "block";
+          self.element.style.display == "block" ? self.element.style.display = "none" : self.element.style.display = "block";
     }
 
 
