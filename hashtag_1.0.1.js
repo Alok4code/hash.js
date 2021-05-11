@@ -136,11 +136,15 @@ function hash(sel) {
       }
       return '';
      },
-     addElm: function(elm, id){
+     addElm: function(elm, appendOn, id){
              element1 = document.createElement(elm);
-             element.id = id;
-             self.element.appendChild(element1);
+             element1.id = id;
+             document.querySelector(appendOn).appendChild(element1);
      },
+     text: function(text){
+             self.element.innerHTML = text;
+     },
+     
      
 
 
