@@ -2,14 +2,16 @@ function #(sel)
 {
 const self = {
     element: document.querySelector(selector),
-    html: ()=> self.element,
+    html: ()=> {
+      self.element
+    },
     on: (event, callback) => {
       self.element.addEventListener(event, callback)
     },
     hide: (animeName)=> {
-      self.element.style.display = 'none';
       if(animeName == null){}else{
-      self.element.setAttribute("class", `animate__animated animate__${animeName}`)
+      self.element.setAttribute("class", `animate__animated animate__${animeName} animate__duration-1s`);
+      self.element.style.display = 'none';
       }
     },
     attr: (name, value) => {
