@@ -230,4 +230,7 @@ storage(action, key, value)
 //     "set"   set the key with the respective value
 //     "remove" remove the item with the specified key
 ```
-
+Toogle hide and show:<br>
+``` javascript
+$(".element").toogle();
+```
