@@ -109,8 +109,20 @@ function getCookie(cname){
         }
           return "";
 }
-function addElm(elm, id, val) {
+function addElm(element ,elm, id,) {
    var element = document.createElement(elm);
-   element.id = val;
+   element.id = id;
    document.body.appendChild(element);
+}
+function storage(action, key, value){
+   if(action == "clear"){
+    localStorage.clear();
+ }else if(action == "set"){
+    localStorage.setItem(key, value)
+ }else if(action == "get"){
+   var value = localStorage.getItem(key);
+   return value;
+ }else if(action == "remove"){
+    localStorage.remove(key)
+ }else{}
 }
