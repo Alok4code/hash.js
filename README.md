@@ -200,3 +200,20 @@ Change the style of an element:<br>
 Example:
 #("body").css("background", "black") //changes the css to background: black;
 ```
+Ajax: change the content of an element with remote file content:<br>
+``` javascript
+#("body").ajax("https://url-to-file.com/TXT.txt", "get") //the second one is the method
+```
+
+Set a cookie 🍪:<br>
+``` javascript
+setCookie("username", "hashtag", "session", "/"); //key, value, expires, path
+```
+Get a cookie by name:<br>
+``` javascript
+getCookie("username"); //returns "hashtag"
+```
+Add an element:<br>
+``` javascript
+addElm("#('place to append')", "element name", "id of elm")
+```
