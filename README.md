@@ -216,4 +216,16 @@ getCookie("username"); //returns "hashtag"
 Add an element:<br>
 ``` javascript
 addElm("#('place to append')", "element name", "id of elm")
+// You can use the set attribute function to add attributes or to change text into the element
 ```
+Configure local storage:<br>
+``` javascript
+storage(action, key, value)
+
+// action list:
+//     "clear" clears the local storage
+//     "get".  Gets the iten with specified key
+//     "set"   set the key with the respective value
+//     "remove" remove the item with the specified key
+```
+
