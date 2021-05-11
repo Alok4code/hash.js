@@ -1,7 +1,5 @@
 # [hashtag](https://netopa.github.io/hashtag)
 <br>
-<br>
-<br>
 # how to use
 <br>
 # Just use it like jQuery :
@@ -176,7 +174,5 @@ slideOutLeft
 slideOutRight
 slideOutUp
 
-
-
-
 ```
+
