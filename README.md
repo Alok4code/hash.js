@@ -189,4 +189,14 @@ Prepend text: <br>
 ``` javascript
 #("body").prepend("someText")
 ```
-
+Set or get attributes:<br>
+``` javascript
+#("body").attr("id") // returns body
+#("body").attr("id", "body") // sets I'd to body
+```
+Change the style of an element:<br>
+``` javascript
+#("body").css(property, value)
+Example:
+#("body").css("background", "black") //changes the css to background: black;
+```
