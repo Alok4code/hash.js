@@ -1,17 +1,17 @@
-<img src="./logo.png" height="auto" width="auto" style="border-radius: 50%;"><br>
+<img src="./logo.png" height="auto" width="auto" style="border-radius: 15px;"><br>
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
-<h3>CDN</h3>
+CDN
 <br>
 <code>
 <script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script>
 </code>
 <br>
-<h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
+size: 1/6<sup>th</sup> of jQuery !(when completed)
 <br>
-<he>how to use</h2>
+how to use
 <br>
-<h2Just use it like jQuery :</h2>
+Just use it like jQuery :
 
 ``` javascript
 hash('#id').hide(animationName);
