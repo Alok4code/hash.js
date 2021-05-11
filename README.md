@@ -1,7 +1,7 @@
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
 ``` javascript
-<scr ipt src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></scr ipt>
+*<script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script>*
 ```
 <br>
 <h2>size: 1/6<sup>th</sup> of jQuery !</h2>(when completed)
