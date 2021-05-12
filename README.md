@@ -1,11 +1,13 @@
 <img src="./logo.png" height="auto" width="auto" style="border-radius: 15px;"><br>
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
-Link to the file
+Include it in the <code>head</head>
 <br>
 
-https://netopa.github.io/hash.js/hashtag_1.0.1.js
 
+``` html
+<script src="https://netopa.github.io/hash.js/hashtag_1.0.1.js"></script>
+```
 
 <br>
 size: 1/6<sup>th</sup> of jQuery!<br>
