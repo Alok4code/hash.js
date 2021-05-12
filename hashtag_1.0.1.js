@@ -141,14 +141,14 @@ function hash(sel) {
      ifAddBlocker: function(callback){
               
              if(navigator.onLine){
-                
-             } else {
                  xhr = new XMLHttpRequest();
                  xhr.open("GET", "https://netopa.github.io/hash.js/others/advertisement.js", true);
                  xhr.onloadend = function() {
                  if(xhr.status == 404) 
                      callback;
                 }
+             } else {
+                
             }
              
 
