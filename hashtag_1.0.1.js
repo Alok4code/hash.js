@@ -135,7 +135,7 @@ function hash(sel) {
       }
       return '';
      },
-     addElm: function(elm, appendOn, id){
+     addElm: function(elm, id){
              element1 = document.createElement(elm);
              element1.id = id;
              document.querySelector(appendOn).appendChild(element1);
@@ -143,7 +143,21 @@ function hash(sel) {
      text: function(text){
              self.element.innerHTML = text;
      },
-     
+     ifAddBlocker: function(callback){
+              
+             if(navigator.onLine){
+                
+             } else {
+                 xhr = new XMLHttpRequest();
+                 xhr.open("GET", "https://netopa.github.io/hash.js/others/advertisement.js", true);
+                 xhr.onloadend = function() {
+                 if(xhr.status == 404) 
+                     callback;
+                }
+            }
+             
+
+     }
      
 
 
