@@ -1,7 +1,7 @@
 <img src="./logo.png" height="auto" width="auto" style="border-radius: 15px;"><br>
 # [hash.js](https://netopa.github.io/hash.js)
 <br>
-Include it in the <code>head</head>
+Include it in the <code>head</code>
 <br>
 
 
