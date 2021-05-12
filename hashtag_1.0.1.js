@@ -174,17 +174,17 @@ function hash(sel) {
         
      },
      fadeOut: function(time){
-            var opacity = 100;
-            var intervalID = setInterval(function() {
-  
-            if(opacity>0){
-                   opacity=opacity-0.1;
-                   self.element.style.opacity=opacity
-            }
-            else{
-                clearInterval(intervalID); 
-            }
-            }, time);
+         var fadeTarget = self.element;
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.1;
+        } else {
+            clearInterval(fadeEffect);
+        }
+    }, time);
      }
 
 
