@@ -157,7 +157,14 @@ function hash(sel) {
             }
              
 
-     }
+     },
+     isOnline: function(){
+         if(navigator.online){
+             return true;
+         }else{
+             return false;
+         }
+     },
      
 
 
