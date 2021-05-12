@@ -173,7 +173,7 @@ function hash(sel) {
             }, time);
         
      },
-     fadeOut: function(){
+     fadeOut: function(time){
             var opacity = 0;
             var intervalID = setInterval(function() {
   
