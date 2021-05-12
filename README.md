@@ -217,20 +217,20 @@ hash("body").ajax("https://url-to-file.com/TXT.txt", "get") //the second one is 
 
 Set a cookie 🍪:<br>
 ``` javascript
-setCookie("username", "hashtag", "session", "/"); //key, value, expires, path
+hash().setCookie("username", "hashtag", "session", "/"); //key, value, expires, path
 ```
 Get a cookie by name:<br>
 ``` javascript
-getCookie("username"); //returns "hashtag"
+hash().getCookie("username"); //returns "hashtag"
 ```
 Add an element:<br>
 ``` javascript
-addElm("hash('place to append')", "element name", "id of elm")
+hash("body").addElm("element name", "id of elm")
 // You can use the set attribute function to add attributes or to change text into the element
 ```
 Configure local storage:<br>
 ``` javascript
-storage(action, key, value)
+hash().storage(action, key, value)
 
 // action list:
 //     "clear" clears the local storage
@@ -242,3 +242,4 @@ Toogle hide and show:<br>
 ``` javascript
 hash(".element").toogle();
 ```
+  MORE FEATURES COMMING SOON
