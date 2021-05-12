@@ -160,7 +160,19 @@ function hash(sel) {
              return false;
          }
      },
-     
+     fadeIn: function(time){
+            var opacity = 0;
+            var intervalID = setInterval(function() {
+  
+                if (opacity < 1) {
+                    opacity = opacity + 0.1
+                    self.element.style.opacity = opacity;
+                } else {
+                    clearInterval(intervalID);
+                }
+            }, time);
+        
+     }
 
 
 
