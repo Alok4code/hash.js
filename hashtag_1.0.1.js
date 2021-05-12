@@ -164,7 +164,7 @@ function hash(sel) {
             var opacity = 0;
             var intervalID = setInterval(function() {
   
-                if (opacity < 1) {
+                if (opacity > 1) {
                     opacity = opacity + 0.01
                     self.element.style.opacity = opacity;
                 } else {
