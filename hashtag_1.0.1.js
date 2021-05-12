@@ -174,10 +174,10 @@ function hash(sel) {
         
      },
      fadeOut: function(time){
-            var opacity = 0;
+            var opacity = 100;
             var intervalID = setInterval(function() {
   
-                if (opacity < 100) {
+                if (opacity < 1) {
                     opacity = opacity - 0.01
                     self.element.style.opacity = opacity;
                 } else {
