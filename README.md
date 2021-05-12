@@ -21,12 +21,9 @@ hash('.class').show(animationName);
 hash('by tag').animate(animation name, duration, delay);
 ```
 Note: you must first enable animation by
-<br>
-
 ``` javascript
 hash().enableAnime();
 ```
-<br>
 Which enables it for all element on the page<br>
 Then enable it for an element
 ``` javascript
