@@ -99,19 +99,15 @@ function hash(sel) {
             }
      },
      addScript: function(url){
-           const head = document.getElementsByTagName('head')[0];
-           const script = document.createElement('script');
-           script.type = 'text/javascript';
-           script.href = url;
-           head.appendChild(script);
+            const script = document.createElement('script');
+            script.src = url;
+            document.head.append(script);
      },
      addStyle: function(url){
-           const head = document.getElementsByTagName('head')[0];
            const style = document.createElement('link');
            style.rel = 'stylesheet';
-           style.type = 'text/css';
-           style.href = url;
-           head.appendChild(style);
+           style.src = url;
+           document.head.append(style);
      },
      setCookie: function(key, val, expires, path){
            if (expires == null) {
