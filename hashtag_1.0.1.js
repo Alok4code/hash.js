@@ -22,10 +22,9 @@ function hash(sel) {
     hide: function(animeName) {
       if (animeName == null) {
         animeName = "bounceOut";
-      } else {
+      }
         self.element.setAttribute('class', `animate__animated animate__${animeName} animate__duration-2s`);
         self.element.style.display = 'none';
-      }
     },
     attr: function(name, value) {
       if (value == null) {
