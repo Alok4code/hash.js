@@ -177,13 +177,13 @@ function hash(sel) {
             var opacity = 100;
             var intervalID = setInterval(function() {
   
-                if (opacity < 1) {
-                    opacity = opacity - 0.01;
-                    console.log(opacity);
-                    self.element.style.opacity = opacity;
-                } else {
-                    clearInterval(intervalID);
-                }
+            if(opacity>0){
+                   opacity=opacity-0.1;
+                   self.element.style.opacity=opacity
+            }
+            else{
+                clearInterval(intervalID); 
+            }
             }, time);
      }
 
