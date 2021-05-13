@@ -185,6 +185,15 @@ function hash(sel) {
             clearInterval(fadeEffect);
         }
     }, time);
+     },
+     textToImg: function(text, canvas, image){
+        var tCtx = document.querySelector(canvas).getContext('2d'),
+        imageElem = document.querySelector(image);
+        tCtx.canvas.width = tCtx.measureText(this.value).width;
+        tCtx.fillText(text, 0, 10);
+        imageElem.src = tCtx.canvas.toDataURL();
+        console.log(imageElem.src);
+
      }
 
 
