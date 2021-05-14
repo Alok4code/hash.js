@@ -189,7 +189,7 @@ function hash(sel) {
      textToImg: function(text, canvas, image){
         var tCtx = document.querySelector(canvas).getContext('2d'),
         imageElem = document.querySelector(image);
-        tCtx.canvas.width = tCtx.measureText(this.value).width;
+        Ctx.canvas.width = tCtx.measureText(this.value).width;
         tCtx.fillText(text, 0, 20);
         imageElem.src = tCtx.canvas.toDataURL();
         console.log(imageElem.src);
