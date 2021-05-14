@@ -186,7 +186,7 @@ function hash(sel) {
         }
     }, time);
      },
-     textToImg: function(text, canvas){
+     textToImg: function(text){
         var canvas = self.element;
         var ctx = canvas.getContext("2d");
         ctx.font = "30px Arial";
