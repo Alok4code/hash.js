@@ -190,8 +190,6 @@ function hash(sel) {
         if(size == null){size = "20%"}
         var canvas = document.querySelector(canvas);
         var ctx = canvas.getContext("2d");
-        ctx.font = size+" "+font;
-        ctx.fillStyle = fillStyle;
         ctx.textAlign = textAlign;
         ctx.fillText(text, canvas.width/2, canvas.height/2);
 
