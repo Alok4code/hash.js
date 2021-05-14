@@ -186,12 +186,11 @@ function hash(sel) {
         }
     }, time);
      },
-     textToImg: function(text, canvas, size, font, fillStyle, textAlign){
-        if(size == null){size = "20%"}
-        var canvas = document.querySelector(canvas);
+     textToImg: function(text, canvas, size){
+        var canvas = document.querySelecror(canvas);
         var ctx = canvas.getContext("2d");
-        ctx.textAlign = textAlign;
-        ctx.fillText(text, canvas.width/2, canvas.height/2);
+        ctx.font = `${size} monospace`;
+        ctx.strokeText(text, 10, 50);
 
      },
      vibrate: function(val){
