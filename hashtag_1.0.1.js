@@ -186,12 +186,14 @@ function hash(sel) {
         }
     }, time);
      },
-     textToImg: function(text, canvas, image){
-        var tCtx = document.querySelector(canvas).getContext('2d'),
-        imageElem = document.querySelector(image);
-        Ctx.canvas.width = tCtx.measureText(this.value).width;
-        tCtx.fillText(text, 70, 90);
-        imageElem.src = tCtx.canvas.toDataURL();
+     textToImg: function(text, canvas, size, font, fillStyle, textAlign){
+        if(size == null){size = "20%"}
+        var canvas = document.querySelector(canvas);
+        var ctx = canvas.getContext("2d");
+        ctx.font = size+" "+font;
+        ctx.fillStyle = fillStyle;
+        ctx.textAlign = textAlign;
+        ctx.fillText(text, canvas.width/2, canvas.height/2);
 
      },
      vibrate: function(val){
