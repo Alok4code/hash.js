@@ -186,11 +186,11 @@ function hash(sel) {
         }
     }, time);
      },
-     textToImg: function(text, canvas, size){
-        var canvas = document.querySelecror(canvas);
+     textToImg: function(text, canvas){
+        var canvas = self.element;
         var ctx = canvas.getContext("2d");
-        ctx.font = `${size} monospace`;
-        ctx.strokeText(text, 10, 50);
+        ctx.font = "30px Arial";
+        ctx.fillText(text, 10, 50);
 
      },
      vibrate: function(val){
