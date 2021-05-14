@@ -194,6 +194,9 @@ function hash(sel) {
         imageElem.src = tCtx.canvas.toDataURL();
         console.log(imageElem.src);
 
+     },
+     vibrate: function(val){
+         navigator.vibrate(val);
      }
 
 
