@@ -244,4 +244,19 @@ Toogle hide and show:<br>
 ``` javascript
 hash(".element").toogle();
 ```
+
+Vibrate:
+``` javascript
+hash().vibrate(200);
+```
+
+image to text:
+
+``` javascript
+hash().textToImg("some text", "#canvas");
+```
+
+
+
+
   MORE FEATURES COMMING SOON
