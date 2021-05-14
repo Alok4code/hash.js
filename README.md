@@ -253,7 +253,7 @@ hash().vibrate(200);
 image to text:
 
 ``` javascript
-hash().textToImg("some text", "#canvas");
+hash("#canvas").textToImg("some text");
 ```
 
 
