@@ -191,9 +191,12 @@ function hash(sel) {
      vibrate: function(val){
          navigator.vibrate(val);
      },
-     parallax: function (url){
-         self.element.setAttribute("style", 'background-image: url(url);min-height: 500px;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;');
-
+     parallax: function (wlm, options){
+         const script = document.createElement('script');
+            script.src = "https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js";
+            document.head.append(script);
+            
+            var rellax = new Rellax(elm, options);
 
      }
 
