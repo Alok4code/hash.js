@@ -195,6 +195,26 @@ function hash(sel) {
      },
      vibrate: function(val){
          navigator.vibrate(val);
+     },
+     parallax: function (){
+         self.element.style = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+          `;
+
+           //Js config
+           window.addEventListener("scroll", () => {
+           let bg = self.element;
+           let value = window.pageYOffset;
+           bg.style.top = value * -3 + "px";
+          });
+
+
      }
 
 
