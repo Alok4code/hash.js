@@ -191,7 +191,7 @@ function hash(sel) {
      vibrate: function(val){
          navigator.vibrate(val);
      },
-     parallax: function (wlm, options){
+     parallax: function (elm, options){
          const script = document.createElement('script');
             script.src = "https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js";
             document.head.append(script);
