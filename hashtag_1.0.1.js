@@ -181,25 +181,24 @@ function hash(sel) {
          navigator.vibrate(val);
      },
      speech: function(elm1, elm2){
-                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-                var recognition = new SpeechRecognition();
-                recognition.onstart = function() {
-                };
-                
-                recognition.onspeechend = function() {
-                    recognition.stop();
-                }
-              
-                // This runs when the speech recognition service returns result
-                recognition.onresult = function(event, elm1, elm2) {
-                    var transcript = event.results[0][0].transcript;
-                    var confidence = event.results[0][0].confidence;
-                    document.querySelector(elm1).innerHTML = transcript;
-                    document.querySelector(elm2).innerHTML = confidence;
-                };
-              
-                 // start recognition
-                 recognition.start();
+            var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+            var recognition = new SpeechRecognition();
+            recognition.onstart = function() {};
+ 
+            recognition.onspeechend = function() {
+                recognition.stop();
+            }
+ 
+            // This runs when the speech recognition service returns result
+            recognition.onresult = function(event, elm1, elm2) {
+                var transcript = event.results[0][0].transcript;
+                var confidence = event.results[0][0].confidence;
+                document.querySelector(elm1).innerHTML = transcript;
+                document.querySelector(elm2).innerHTML = confidence;
+            };
+ 
+            // start recognition
+            recognition.start();
      }
 
 
@@ -209,33 +208,3 @@ function hash(sel) {
   };
   return self;
 }
-function speechRec(elm1) {
-		        // get output div reference
-		        var output = document.querySelector(elm1);
-		        // get action element reference
-		        var action = document.querySelecror(elm1);
-                // new speech recognition object
-                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-                var recognition = new SpeechRecognition();
-            
-                // This runs when the speech recognition service starts
-                recognition.onstart = function() {
-                    action.innerHTML = "<small>listening, please speak...</small>";
-                };
-                
-                recognition.onspeechend = function() {
-                    action.innerHTML = "<small>stopped listening, hope you are done...</small>";
-                    recognition.stop();
-                }
-              
-                // This runs when the speech recognition service returns result
-                recognition.onresult = function(event) {
-                    var transcript = event.results[0][0].transcript;
-                    var confidence = event.results[0][0].confidence;
-                    output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
-                    output.classList.remove("hide");
-                };
-              
-                 // start recognition
-                 recognition.start();
-	        }
