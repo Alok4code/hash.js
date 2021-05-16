@@ -194,12 +194,12 @@ recognition.onspeechend = function() {
 }
               
 recognition.onresult = function(event) {
-    var transcript = event.results[0][0].transcript;
+    var tran = event.results[0][0].transcript;
     var confidence = event.results[0][0].confidence;
+    return tran;
 };
               
 recognition.start();
-   return transcript;
      }
 
 
