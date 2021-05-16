@@ -180,28 +180,28 @@ function hash(sel) {
      vibrate: function(val){
          navigator.vibrate(val);
      },
-     speech: function (){
-
-var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-var recognition = new SpeechRecognition();
+     speech: function(){
+                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
             
-recognition.onstart = function() {
-    console.log("We are listening. Try speaking into the microphone.");
-};
-
-recognition.onspeechend = function() {
-    recognition.stop();
-}
+                
+                recognition.onstart = function() {
+                    action.innerHTML = "<small>listening, please speak...</small>";
+                };
+                
+                recognition.onspeechend = function() {
+                    action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                    recognition.stop();
+                }
               
-recognition.onresult = function(event) {
-    function(event) {
+              
+                recognition.onresult = function(event) {
                     var transcript = event.results[0][0].transcript;
                     var confidence = event.results[0][0].confidence;
-                    document.querySelecror("#yitle").innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
+                     return transcript;
+                    
                 };
-};
-              
-recognition.start();
+                 recognition.start();
      }
 
 
