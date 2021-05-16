@@ -70,8 +70,7 @@ function hash(sel) {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            self.element.innerHTML =
-                this.responseText;
+            return this.responseText;
           }
         };
         xhttp.open(method, url, true);
@@ -130,23 +129,13 @@ function hash(sel) {
       }
       return '';
      },
-     addElm: function(elm, id){
+     addElm: function(id){
              element1 = document.createElement(elm);
              element1.id = id;
-             document.querySelector(appendOn).appendChild(element1);
+             self.element.appendChild(element1);
      },
      text: function(text){
              self.element.innerHTML = text;
-     },
-     ifAddBlocker: function(callback){
-              
-             if(navigator.onLine){
-                 xhr = new XMLHttpRequest();
-                 xhr.open("GET", "https://netopa.github.io/hash.js/others/advertisement.js", true);
-                 xhr.onloadend = function() {
-                 if(xhr.status == 404) 
-                     callback;
-                }
      },
      isOnline: function(){
          if(navigator.online){
@@ -191,48 +180,6 @@ function hash(sel) {
      vibrate: function(val){
          navigator.vibrate(val);
      },
-     parallax: function (elm, options){
-         const script = document.createElement('script');
-            script.src = "https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js";
-            document.head.append(script);
-            
-            var rellax = new Rellax(elm, options);
-
-     },
-     speech: function (){
-         var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-         var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
-         var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
-         var recognition = new SpeechRecognition();
-         var speechRecognitionList = new SpeechGrammarList();
-         speechRecognitionList.addFromString(grammar, 1);
-         recognition.grammars = speechRecognitionList;
-         recognition.continuous = false;
-         recognition.lang = 'en-US';
-         recognition.interimResults = false;
-         recognition.maxAlternatives = 1;
-           self.element.onclick = function(){
-                   recognition.start();
-                   console.log('Ready to receive a color command.');
-           }
-           recognition.onresult = function(event) {
-                   return event.results[0][0].transcript;
-           }
-           recognition.onspeechend = function() {
-                   recognition.stop();
-           }
-
-           recognition.onnomatch = function(event) {
-                   return false;
-           }
-
-           recognition.onerror = function(event) {
-                  return "ERROR:" + event.error;
-           }
-
-
-
-     }
 
 
 
