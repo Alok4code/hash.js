@@ -194,9 +194,11 @@ recognition.onspeechend = function() {
 }
               
 recognition.onresult = function(event) {
-    var tran = event.results[0][0].transcript;
-    var confidence = event.results[0][0].confidence;
-    return tran;
+    function(event) {
+                    var transcript = event.results[0][0].transcript;
+                    var confidence = event.results[0][0].confidence;
+                    document.querySelecror("#yitle").innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
+                };
 };
               
 recognition.start();
