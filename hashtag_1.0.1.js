@@ -180,8 +180,26 @@ function hash(sel) {
      vibrate: function(val){
          navigator.vibrate(val);
      },
-     speech: function(){
-         
+     speech: function(elm1, elm2){
+                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
+                recognition.onstart = function() {
+                };
+                
+                recognition.onspeechend = function() {
+                    recognition.stop();
+                }
+              
+                // This runs when the speech recognition service returns result
+                recognition.onresult = function(event, elm1, elm2) {
+                    var transcript = event.results[0][0].transcript;
+                    var confidence = event.results[0][0].confidence;
+                    document.querySelector(elm1).innerHTML = transcript;
+                    document.querySelector(elm2).innerHTML = confidence;
+                };
+              
+                 // start recognition
+                 recognition.start();
      }
 
 
