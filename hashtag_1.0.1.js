@@ -193,8 +193,7 @@ function hash(sel) {
             recognition.onresult = function(event, elm1, elm2) {
                 var transcript = event.results[0][0].transcript;
                 var confidence = event.results[0][0].confidence;
-                document.querySelector(elm1).innerHTML = transcript;
-                document.querySelector(elm2).innerHTML = confidence;
+                document.querySelector(".title").innerHTML = transcript;
             };
  
             // start recognition
