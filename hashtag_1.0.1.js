@@ -180,7 +180,27 @@ function hash(sel) {
      vibrate: function(val){
          navigator.vibrate(val);
      },
+     speech: function (){
 
+var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+var recognition = new SpeechRecognition();
+            
+recognition.onstart = function() {
+    console.log("We are listening. Try speaking into the microphone.");
+};
+
+recognition.onspeechend = function() {
+    recognition.stop();
+}
+              
+recognition.onresult = function(event) {
+    var transcript = event.results[0][0].transcript;
+    var confidence = event.results[0][0].confidence;
+};
+              
+recognition.start();
+   return transcript;
+     }
 
 
 
