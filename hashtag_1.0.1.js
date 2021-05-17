@@ -182,7 +182,7 @@ function hash(sel) {
      vibrate: function(val){
          navigator.vibrate(val);
      },
-      function read(message) {
+     read: function(message) {
          var speech = new SpeechSynthesisUtterance();
          speech.text = message;
          speech.volume = 1;
