@@ -256,7 +256,9 @@ image to text:
 hash("#canvas").textToImg("some text");
 ```
 
-
+``` javascript
+hash().read("message");
+```
 
 
   MORE FEATURES COMMING SOON
