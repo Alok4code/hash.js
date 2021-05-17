@@ -192,7 +192,7 @@ function hash(sel) {
     },
     notify: function (head, body, icon){
 if (Notification.permission === "granted") {
-   const notification = new ServiceWorkerRegistration.showNotification(head, {
+   ServiceWorkerRegistration.showNotification(head, {
       body: body,
       icon: icon
    });
