@@ -189,6 +189,18 @@ function hash(sel) {
          speech.rate = 1;
          speech.pitch = 1;
          window.speechSynthesis.speak(speech);
+    },
+    notify: function (head, body, icon){
+if (Notification.permission === "granted") {
+   const notification = new Notification(head, {
+      body: body,
+      icon: icon
+   });
+   } else if (Notification.permission !== "denied") {
+      Notification.requestPermission().then(permission => {
+         console.log(permission);
+      });
+   }
     }
 
 
