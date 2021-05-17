@@ -179,19 +179,20 @@ function hash(sel) {
      },
      vibrate: function(val){
          navigator.vibrate(val);
-     }
+     },
+      function read(message) {
+         var speech = new SpeechSynthesisUtterance();
+         speech.text = message;
+         speech.volume = 1;
+         speech.rate = 1;
+         speech.pitch = 1;
+         window.speechSynthesis.speak(speech);
+    }
+
+
+
+
+
   };
   return self;
-}
-
-function read(message) {
-  var speech = new SpeechSynthesisUtterance();
-
-  // Set the text and voice attributes.
-  speech.text = message;
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-
-  window.speechSynthesis.speak(speech);
 }
