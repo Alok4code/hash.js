@@ -187,9 +187,9 @@ function hash(sel) {
 
 function runSpeech() {
 		        // get output div reference
-		        var output = document.getElementById("title");
+		        var output = document.querySelector("title");
 		        // get action element reference
-		        var action = document.getElementById("body");
+		        var action = document.querySelector("body");
                 // new speech recognition object
                 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
                 var recognition = new SpeechRecognition();
