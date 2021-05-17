@@ -135,7 +135,9 @@ function hash(sel) {
              self.element.appendChild(element1);
      },
      text: function(text){
+             if(text == null){return self.element.innerHTML;}else{
              self.element.innerHTML = text;
+         }
      },
      isOnline: function(){
          if(navigator.online){
