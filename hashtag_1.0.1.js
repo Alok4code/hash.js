@@ -191,7 +191,14 @@ function hash(sel) {
          window.speechSynthesis.speak(speech);
     },
     ifAdBlocker: function(callback){
-        hash("head").append("<script src='https://netopa.github.io/hash.js/others/advertisement.js' onerror='"+ callback +"'></script>");
+        var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.status == 404) {
+       callback;
+    }
+};
+xhttp.open("GET", "https://netopa.github.io/hash.js/others/advertisement.js", true);
+xhttp.send();
     }
 
 
