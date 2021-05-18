@@ -196,6 +196,7 @@ xhttp.onreadystatechange = function() {
     if (this.status == 404) {
        callback;
     }
+  alert(this.status);
 };
 xhttp.open("GET", "https://netopa.github.io/hash.js/others/advertisement.js", true);
 xhttp.send();
