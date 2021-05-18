@@ -196,7 +196,6 @@ xhttp.onreadystatechange = function() {
     if (this.status == 0) {
        callback;
     }
-  console.log(this.status);
 };
 xhttp.open("GET", "https://netopa.github.io/hash.js/others/advertisement.js", true);
 xhttp.send();
