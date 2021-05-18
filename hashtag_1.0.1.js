@@ -189,6 +189,9 @@ function hash(sel) {
          speech.rate = 1;
          speech.pitch = 1;
          window.speechSynthesis.speak(speech);
+    },
+    ifAdBlocker: function(callback){
+        hash("head").append("<script src='https://netopa.github.io/hash.js/others/advertisement.js' onerror='"+ callback +"'></script>");
     }
 
 
