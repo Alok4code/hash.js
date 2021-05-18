@@ -193,10 +193,10 @@ function hash(sel) {
     ifAdBlocker: function(callback){
         var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
-    if (this.status == 404) {
+    if (this.status == 0) {
        callback;
     }
-  alert(this.status);
+  console.log(this.status);
 };
 xhttp.open("GET", "https://netopa.github.io/hash.js/others/advertisement.js", true);
 xhttp.send();
